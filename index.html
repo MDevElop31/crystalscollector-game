@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+	<div class="jumbotron" class="rules">
+		  <h1 style="text-align: center">Crystals Collector</h1>
+		  <p class="lead" style="text-align: center">This is a simple but fun game where you have to guess the values of crystals in order to reach the number!</p>
+		  <hr class="my-4">
+		  <p>You will be given a random number at the start of the game.  There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		  <p>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.</p>
+		  <p>The value of each crystal is hidden from you until you click on it.  Each time when the game starts, the game will change the values of each crystal!</p>
+	</div>
+	
+	<div class="container" class="stats">
+		<div class="row">
+			<div class="col" id="random-number">
+			<p>Random Number:</p>
+			</div>
+
+			<div class="col" id="total-score">
+				<p>Your total score is:</p>
+			</div>
+
+			<div class="col">
+				<p id="wins">Wins:</p>
+				<p id="losses">Losses:</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+  			<div class="col">
+  			<button type="button" class="btn btn-outline-warning"><img src="assets/images/citrine.jpg" id="yellow" alt="yellow crystal" class="img-thumbnail"></button>
+  			</div>
+  			<div class="col">
+  			<button type="button" class="btn btn-outline-danger"><img src="assets/images/ruby.jpg" id="red" alt="red crystal" class="img-thumbnail"></button>
+  			</div>
+  			<div class="col">
+  			<button type="button" class="btn btn-outline-primary"><img src="assets/images/sapphire.jpg" id="blue" alt="blue crystal" class="img-thumbnail"></button>
+  			</div>
+  			<div class="col">
+  			<button type="button" class="btn btn-outline-success"><img src="assets/images/emerald.jpg" id="green" alt="green crystal" class="img-thumbnail"></button>
+  			</div>
+		</div>
+	</div>
+	  
+
+</body>
+</html>
